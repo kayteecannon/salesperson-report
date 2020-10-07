@@ -1,13 +1,16 @@
 """Generate sales report showing total melons each salesperson sold."""
 
 # Declare empty lists for salespeople and melons sold
+# TODO: Create a salespeople dictionary, include total order amount and melons sold
 salespeople = []
 melons_sold = []
 
 # Open the sales report file
+# TODO: Create function to open files
 f = open('sales-report.txt')
 
 # Iterate over each line in file
+# TODO: Create function to make dictionary
 for line in f:
 
     # Remove trailing whitespace
@@ -35,5 +38,6 @@ for line in f:
         melons_sold.append(melons)
 
 # For each salesperson, print salesperson and melons sold
+# TODO: Create function to print sales report
 for i in range(len(salespeople)):
     print(f'{salespeople[i]} sold {melons_sold[i]} melons')
